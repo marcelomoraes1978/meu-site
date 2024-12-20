@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    padding: 1rem;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quote-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.quote-image:hover {
+    transform: scale(1.05);
+}
+
+.quote {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Calendar Section */
+.calendar-section {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#calendar-header {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#calendario div {
+    padding: 15px;
+    background-color: #e9e9e9;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#calendario div:hover {
+    background-color: #6a11cb;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p br {
+    display: block;
+    margin-top: 0.5rem;
+}
